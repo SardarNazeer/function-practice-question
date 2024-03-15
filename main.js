@@ -20,7 +20,7 @@ function countVowels(str){
     return count;
 }
 
-// create an arrow function with same task 
+// q2) create an arrow function with same task 
 
 
 const countVowel = (str) => {
@@ -40,3 +40,23 @@ const countVowel = (str) => {
     }
     return count;
 }
+
+// q3) For a given array of numbers, print the square of each value using the foreach loop 
+
+// 1st method 
+
+let number = [1,2,3,4,5,6,7,8,9,10];
+
+number.forEach((num) => {
+    console.log(num*num);
+})
+
+// 2nd method 
+
+let numb = [55,76,89,45,34,23];
+
+let calcSqr = (num) => {
+    console.log("Square of" + " " + num + " " + num * num);
+}
+
+numb.forEach(calcSqr);
